@@ -1,15 +1,21 @@
 import unittest
-
-
-def test_price_under_10():
-    price == 9
-    case_coupon == 5
-    percent_coupon == .10
-
-
+import unittest.mock as mock
+from store import coupon_calculations
 
 class MyTestCase(unittest.TestCase):
-    self.assertTrue()
+
+    def test_price_under_10(self):
+        with mock.patch('builtins.input'):
+            if cash_coupon > 0:
+                total_price_cash_coupon = price - cash_coupon
+                if percent_coupon > 0 < cash_coupon:
+
+
+
+        self.assertTrue()
+
+
+
 
 
 if __name__ == '__main__':
