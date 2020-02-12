@@ -1,5 +1,5 @@
 import unittest
-#import unittest.mock as mock
+import unittest.mock as mock
 from store import coupon_calculations as coupons
 
 class MyTestCase(unittest.TestCase):
@@ -10,7 +10,7 @@ class MyTestCase(unittest.TestCase):
         assert coupons.calculate_price(dollar_amt, 5, 15) == 1.70
         assert coupons.calculate_price(dollar_amt, 5, 20) == 1.60
         assert coupons.calculate_price(dollar_amt, 10, 10) == 0
-
+        with mock.patch('builtins', side_effect=[7.00,5,15]):
 
 
 if __name__ == '__main__':
