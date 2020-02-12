@@ -5,10 +5,13 @@ def calculate_price(price, cash_coupon, percent_coupon):
     percent_value = percent_coupon / 100
 
     #subtract percent value from the CC_discount_price
-    discount_value = cc_discount_price * (1 - percent_value)
+    discount_price = cc_discount_price * (1 - percent_value)
 
+    if cc_discount_price <= 0:
+        return 0.00
+    #((price - cash_coupon) * (1 - percent_coupon / 100))
 
-    return
+    return discount_price
 
 
 
