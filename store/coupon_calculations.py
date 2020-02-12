@@ -1,18 +1,18 @@
 def calculate_price(price, cash_coupon, percent_coupon):
     pass
 
-price = int( input('Please enter price: '))
-cash_coupon = int( input('Please enter cash coupon amount: '))
-percent_coupon = float( input('Please enter coupon percent: '))
+#price = int( input('Please enter price: '))
+#cash_coupon = int( input('Please enter cash coupon amount: '))
+#percent_coupon = float( input('Please enter coupon percent: '))
 
-if price < 10:
-    if cash_coupon < 10:
-        if percent_coupon < 20:
-
-
+#if price < 10:
+     #if cash_coupon < 10:
+        #if percent_coupon < 20:
 
 
-        total_price_cash_coupon = price - cash_coupon
+
+
+        #total_price_cash_coupon = price - cash_coupon
         #print('Your total is $%0d' % (total_price_cash_coupon))
 
 
