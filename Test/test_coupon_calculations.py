@@ -12,14 +12,12 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(coupons.calculate_price(under_ten, 5.00, 20), 1.60)
         #price: under 10, 10 cash, 10%
         self.assertEqual(coupons.calculate_price(under_ten, 10.00, 10), 0)
-        #with mock.patch('builtins', side_effect=[7.00,5,15]):
 
+    def test_price_under_between_ten_thirty(self):
+        between_ten_thirty = 15
+        #price: 10 to up to 30, 5 cash, 10%
+        self.assertEqual(coupons.calculate_price(between_ten_thirty, 5.00, 10), 9)
 
-#$15.99 - $5.00 = $10.99.
-#30% off $10.99 to get $7.69
-    #get item price
-    #subtact coupon
-    #discount
 
 if __name__ == '__main__':
     unittest.main()
