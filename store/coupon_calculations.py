@@ -1,19 +1,16 @@
 def calculate_price(price, cash_coupon, percent_coupon):
-    pass
 
-#price = int( input('Please enter price: '))
-#cash_coupon = int( input('Please enter cash coupon amount: '))
-#percent_coupon = int( input('Please enter coupon percent: ') / 100)
+    #self.assertEqual(coupons.calculate_price(under_ten, 5.00, 10) == 1.80)
+    cc_discount_price = price - cash_coupon
+    percent_value = percent_coupon / 100
 
-#if price < 10:
- #    if cash_coupon < 10:
-  #      if percent_coupon < 20:
+    #subtract percent value from the CC_discount_price
+    discount_value = cc_discount_price * (1 - percent_value)
 
 
+    return
 
 
-        #total_price_cash_coupon = price - cash_coupon
-        #print('Your total is $%0d' % (total_price_cash_coupon))
 
 
 if __name__ == '__main__':
