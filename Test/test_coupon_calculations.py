@@ -11,7 +11,7 @@ class MyTestCase(unittest.TestCase):
         #price: under 10, 5 cash, 20%
         self.assertEqual(coupons.calculate_price(under_ten, 5.00, 20), 1.60)
         #price: under 10, 10 cash, 10%
-        self.assertEqual(coupons.calculate_price(under_ten, 10.00, 10), -2.70)
+        self.assertEqual(coupons.calculate_price(under_ten, 10.00, 10), 0)
         #with mock.patch('builtins', side_effect=[7.00,5,15]):
 
 
