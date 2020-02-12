@@ -14,10 +14,6 @@ def calculate_price(price, cash_coupon, percent_coupon):
 
     return discount_price
 
-
-
-
 if __name__ == '__main__':
-    pass
-    #calculate_price()
+    calculate_price()
 
